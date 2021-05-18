@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----+-----+-----+-----+-----|      |-----------------------------|
  * |  #  |  $  |  (  |  )  | LMB |      |  +  |  -  |  /  |  *  |  '  |
  * |-----+-----+-----+-----+-----+      |-----------------------------|
- * |  %  |  ^  |  [  |  ]  | RMB |      |  &  |  =  |  ,  |  .  | -   |
+ * |  %  |  ^  |  [  |  ]  | RMB |      |  &  |  =  |  ,  |  .  |  _  |
  * `-----+-----+-----+-----+-----'      `-----------------------------'
  *          .-----------------.           .------------------.
  *          | MMB |  ;  |  =  |           |  =  |  ;  |  DEL |
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYMB] = LAYOUT_gergoplex(
     KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,          KC_GRV,  KC_TILD, _______, _______, KC_BSLS,
     KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_QUOT,
-    KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_MINS,
+    KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_UNDS,
 
                        CMB_TOG, KC_SCLN, KC_EQL,          KC_EQL,  KC_SCLN, KC_DEL
     ),
