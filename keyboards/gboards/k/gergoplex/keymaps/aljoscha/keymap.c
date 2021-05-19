@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_QUOT,
     KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_UNDS,
 
-                       CMB_TOG, KC_SCLN, KC_EQL,          KC_EQL,  KC_SCLN, KC_DEL
+    MT(MOD_LALT, CMB_TOG), MT(MOD_LGUI, KC_SCLN), KC_EQL,     KC_EQL, MT(MOD_RGUI, KC_SCLN), MT(MOD_LALT, KC_DEL)
     ),
 
 /* Keymap 2: Pad/Function layer
@@ -96,6 +96,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_VOLU,
     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,           KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_VOLD,
 
-                     KC_F11,  KC_F12,  _______,           _______, KC_MPLY, KC_MNXT
+    MT(MOD_LALT, KC_F11), MT(MOD_LGUI, KC_F12), _______,     _______, MT(MOD_RGUI, KC_MPLY), MT(MOD_LALT, KC_MNXT)
     )
 };
