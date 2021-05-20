@@ -63,18 +63,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------.      ,-----------------------------.
  * |  !  |  @  |  {  |  }  |  |  |      |  `  |  ~  |     |     |  \  |
  * |-----+-----+-----+-----+-----|      |-----------------------------|
- * |  #  |  $  |  (  |  )  | LMB |      |  +  |  -  |  /  |  *  |  '  |
+ * |CTRL |  $  |  (  |  )  |  #  |      |  +  |  -  |  /  |  *  |  '  |
  * |-----+-----+-----+-----+-----+      |-----------------------------|
- * |  %  |  ^  |  [  |  ]  | RMB |      |  &  |  =  |  ,  |  .  |  _  |
+ * |SHFT |  ^  |  [  |  ]  |  %  |      |  &  |  =  |  ,  |  .  |  _  |
  * `-----+-----+-----+-----+-----'      `-----------------------------'
  *          .-----------------.           .------------------.
  *          | MMB |  ;  |  =  |           |  =  |  ;  |  DEL |
  *          '-----------------'           '------------------'
  */
 [SYMB] = LAYOUT_gergoplex(
-    KC_EXLM,         KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,          KC_GRV,  KC_TILD, _______, KC_UNDS, KC_BSLS,
-    LCTL_T(KC_HASH), KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, RCTL_T(KC_QUOT),
-    LSFT_T(KC_PERC), KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  RSFT_T(KC_UNDS),
+    KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,          KC_GRV,  KC_TILD, _______, KC_UNDS, KC_BSLS,
+    KC_LCTL, KC_DLR,  KC_LPRN, KC_RPRN, KC_HASH,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, RCTL_T(KC_QUOT),
+    KC_LSFT, KC_CIRC, KC_LBRC, KC_RBRC, KC_PERC,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  RSFT_T(KC_UNDS),
 
     MT(MOD_LALT, CMB_TOG), MT(MOD_LGUI, KC_SCLN), KC_EQL,     KC_EQL, MT(MOD_RGUI, KC_SCLN), MT(MOD_LALT, KC_DEL)
     ),
