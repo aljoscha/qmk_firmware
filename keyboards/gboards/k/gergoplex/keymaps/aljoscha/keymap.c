@@ -72,9 +72,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *          '-----------------'           '------------------'
  */
 [SYMB] = LAYOUT_gergoplex(
-    KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,          KC_GRV,  KC_TILD, _______, _______, KC_BSLS,
-    KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_QUOT,
-    KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_UNDS,
+    KC_EXLM,         KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,          KC_GRV,  KC_TILD, _______, KC_UNDS, KC_BSLS,
+    LCTL_T(KC_HASH), KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,          KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, RCTL_T(KC_QUOT),
+    LSFT_T(KC_PERC), KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,          KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  RSFT_T(KC_UNDS),
 
     MT(MOD_LALT, CMB_TOG), MT(MOD_LGUI, KC_SCLN), KC_EQL,     KC_EQL, MT(MOD_RGUI, KC_SCLN), MT(MOD_LALT, KC_DEL)
     ),
@@ -92,9 +92,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            '-----------------'           '-----------------'
  */
 [NUMB] = LAYOUT_gergoplex(
-    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,             KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
-    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_VOLU,
-    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,           KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_VOLD,
+    KC_1,            KC_2,    KC_3,    KC_4,    KC_5,             KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
+    LCTL_T(KC_F1),   KC_F2,   KC_F3,   KC_F4,   KC_F5,            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, RCTL_T(KC_VOLU),
+    LSFT_T(KC_F6),   KC_F7,   KC_F8,   KC_F9,   KC_F10,           KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, RSFT_T(KC_VOLD),
 
     MT(MOD_LALT, KC_F11), MT(MOD_LGUI, KC_F12), _______,     _______, MT(MOD_RGUI, KC_MPLY), MT(MOD_LALT, KC_MNXT)
     )
